@@ -34,3 +34,72 @@ code {
 .dark .leaflet-container {
     background-color: #333;
 }
+
+
+/* Akzidenz Grotesk Pro */
+
+@font-face {
+	font-family: 'Akzidenz';
+	src: local(''),
+		url('./fonts/akzidenz-grotesk-pro/AkzidenzGroteskPro-Regular.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Akzidenz';
+	src: local(''), url('./fonts/akzidenz-grotesk-pro/AkzidenzGroteskPro-It.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Akzidenz';
+	src: local(''), url('./fonts/akzidenz-grotesk-pro/AkzidenzGroteskPro-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Akzidenz';
+	src: local(''), url('./fonts/akzidenz-grotesk-pro/AkzidenzGroteskPro-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+/* Libre Caslon */
+
+@font-face {
+	font-family: 'Libre Caslon';
+	src: local(''), url('./fonts/libre-caslon/LibreCaslonText-Regular.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Libre Caslon';
+	src: local(''), url('./fonts/libre-caslon/LibreCaslonText-Italic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Libre Caslon';
+	src: local(''), url('./fonts/libre-caslon/LibreCaslonText-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}

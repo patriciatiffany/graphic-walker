@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     "./src/**/*.tsx"
@@ -11,6 +13,20 @@ module.exports = {
         'darkmap': 'var(--map-tiles-filter)'
       }
     },
+    // Add fonts to font family
+    fontFamily: {
+      'sans': ['Akzidenz', 'Arial', ...defaultTheme.fontFamily.sans],
+      'serif': ['Libre Caslon', ...defaultTheme.fontFamily.serif],
+      'mono': [...defaultTheme.fontFamily.mono]
+    },
+    fontSize: {
+      'xs': '.85rem',
+      'sm': '0.9rem',
+      'base': '1rem',
+      // 'lg': '1.125rem',
+      // 'xl': '1.25rem',
+      // '2xl': '1.5rem'
+     }
   },
   darkMode: 'class', // or 'media' or 'class
   variants: {
