@@ -416,7 +416,7 @@ export const FilterOneOfRule: React.FC<RuleFormProps & { active: boolean }> = ({
                     {t('filters.btn.reverse')}
                 </Button>
             </div>
-            <Table className="bg-slate-50 dark:bg-gray-800">
+            <Table className="bg-zinc-50 dark:bg-gray-800">
                 <TableRow>
                     <div className="flex justify-center items-center">
                         <StatusCheckbox currentNum={currentCount} totalNum={distinctTotal ?? 0} onChange={handleToggleFullOrEmptySet} />

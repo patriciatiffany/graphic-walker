@@ -132,8 +132,8 @@ export const VizApp = observer(function VizApp(props: BaseVizProps) {
         <ErrorContext value={{ reportError }}>
             <ErrorBoundary fallback={<div>Something went wrong</div>} onError={props.onError}>
                 <ComputationContext.Provider value={wrappedComputation}>
-                    <div className={`${darkMode === 'dark' ? 'dark' : ''} App font-sans bg-white dark:bg-zinc-900 dark:text-white m-0 p-0`}>
-                        <div className="bg-white dark:bg-zinc-900 dark:text-white">
+                    <div className={`${darkMode === 'dark' ? 'dark' : ''} App font-sans bg-zinc-50 dark:bg-zinc-900 dark:text-white m-0 p-0`}>
+                        <div className="bg-zinc-50 dark:bg-zinc-900 dark:text-white">
                             {props.dataSelection}
                             <div className="px-2 mx-2">
                                 <SegmentNav />
@@ -145,7 +145,7 @@ export const VizApp = observer(function VizApp(props: BaseVizProps) {
                             )}
 
                             {segmentKey === ISegmentKey.vis && (
-                                <div style={{ marginTop: '0em', borderTop: 'none' }} className="m-4 p-4 border border-gray-200 dark:border-gray-700">
+                                <div style={{ marginTop: '0em', borderTop: 'none' }} className="m-4 p-4 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-gray-700">
                                     {enhanceAPI?.features?.askviz && (
                                         <AskViz
                                             api={typeof enhanceAPI.features.askviz === 'boolean' ? '' : enhanceAPI.features.askviz}
@@ -218,7 +218,7 @@ export const VizApp = observer(function VizApp(props: BaseVizProps) {
                                 </div>
                             )}
                             {segmentKey === ISegmentKey.data && (
-                                <div className="mx-4 p-4 border border-gray-200 dark:border-gray-700" style={{ marginTop: '0em', borderTop: 'none' }}>
+                                <div className="mx-4 p-4 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-gray-700" style={{ marginTop: '0em', borderTop: 'none' }}>
                                     <DatasetConfig />
                                 </div>
                             )}
@@ -254,7 +254,7 @@ export function VizAppWithContext(props: IVizAppProps) {
     const darkMode = useCurrentMediaTheme(props.dark);
 
     return (
-        <div className={`${darkMode === 'dark' ? 'dark' : ''} App font-sans bg-white dark:bg-zinc-900 dark:text-white m-0 p-0`}>
+        <div className={`${darkMode === 'dark' ? 'dark' : ''} App font-sans bg-zinc-50 dark:bg-zinc-900 dark:text-white m-0 p-0`}>
             <VizStoreWrapper onMetaChange={props.onMetaChange} meta={safeMetas} keepAlive={props.keepAlive} storeRef={props.storeRef}>
                 <FieldsContextWrapper>
                     <VizApp

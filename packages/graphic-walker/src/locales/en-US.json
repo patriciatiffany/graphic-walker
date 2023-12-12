@@ -147,8 +147,8 @@
         },
         "buttons": {
             "create_dataset": "Create Dataset",
-            "export_as_file": "Save As File",
-            "import_file": "Import Graphic Walker File"
+            "export_as_file": "Save As Graphic Walker (JSON) File",
+            "import_file": "Import Graphic Walker (JSON) File"
         },
         "dialog": {
             "create_data_source": "New Data Source",

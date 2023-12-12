@@ -18,7 +18,8 @@ export const AppContent = observer<Omit<IGWProps, 'storeRef' | 'keepAlive'>>(fun
     return (
         <VisContext.Provider value={dataStore.visSpecStore}>
             <FieldsContextWrapper>
-                <div className={`${darkMode === 'dark' ? 'dark' : ''} App font-sans bg-white dark:bg-zinc-900 dark:text-white m-0 p-0`}>
+                <h1 className="font-serif text-3xl font-bold m-4">Story-finding: <i>Exploring the data</i></h1>
+                <div className={`${darkMode === 'dark' ? 'dark' : ''} App font-sans bg-zinc-50 dark:bg-zinc-900 dark:text-white m-0 p-0`}>
                     <VizApp
                         dataSelection={<DataSourceSegment />}
                         computation={dataStore.computation}

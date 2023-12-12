@@ -189,7 +189,7 @@ const PivotTable: React.FC<PivotTableProps> = observer(function PivotTableCompon
                         {new Array(Math.max(topTreeHeaderRowNum - 1, 0)).fill(0).map((_, i) => (
                             <tr className="" key={i}>
                                 <td
-                                    className="bg-zinc-100 dark:bg-zinc-800 text-gray-800 dark:text-gray-100 p-2 m-1 text-xs border border-gray-300"
+                                    className="bg-zinc-50 dark:bg-zinc-800 text-gray-800 dark:text-gray-100 p-2 m-1 text-xs border border-gray-300"
                                     colSpan={dimsInRow.length + (measInRow.length > 0 ? 1 : 0)}
                                 >
                                     _
@@ -200,7 +200,7 @@ const PivotTable: React.FC<PivotTableProps> = observer(function PivotTableCompon
                             <tr className="">
                                 {dimsInRow.map((x) => (
                                     <td
-                                        className="bg-zinc-100 dark:bg-zinc-800 text-gray-800 dark:text-gray-100 p-2 m-1 text-xs border whitespace-nowrap border-gray-300"
+                                        className="bg-zinc-50 dark:bg-zinc-800 text-gray-800 dark:text-gray-100 p-2 m-1 text-xs border whitespace-nowrap border-gray-300"
                                         colSpan={1}
                                     >
                                         {x.name}
@@ -208,7 +208,7 @@ const PivotTable: React.FC<PivotTableProps> = observer(function PivotTableCompon
                                 ))}
                                 {measInRow.length > 0 && (
                                     <td
-                                        className="bg-zinc-100 dark:bg-zinc-800 text-gray-800 dark:text-gray-100 p-2 m-1 text-xs border border-gray-300"
+                                        className="bg-zinc-50 dark:bg-zinc-800 text-gray-800 dark:text-gray-100 p-2 m-1 text-xs border border-gray-300"
                                         colSpan={1}
                                     >
                                         _

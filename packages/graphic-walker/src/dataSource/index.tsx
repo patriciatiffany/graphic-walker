@@ -20,7 +20,7 @@ const DataSourceSegment: React.FC<DSSegmentProps> = (props) => {
     const { dataStore, showDSPanel } = commonStore;
     const { currentDataset, dataSources } = dataStore;
     return (
-        <div className="flex items-center m-4 p-4 border border-gray-200 dark:border-gray-700">
+        <div className="flex items-center m-4 p-4 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-gray-700">
             <GwFile fileRef={gwFileRef} />
             {/* <label className="text-xs mr-1 whitespace-nowrap self-center h-4">
                 {t("DataSource.labels.cur_dataset")}
