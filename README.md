@@ -1,3 +1,14 @@
+*This repository is a fork of [Graphic Walker](https://github.com/Kanaries/graphic-walker).*
+
+To build as an independent app, run:
+```bash
+# packages/graphic-walker
+npm run build:app
+```
+and the resulting app can be found in `/app-dist`.
+
+
+
 <img src="https://ch-resources.oss-cn-shanghai.aliyuncs.com/images/lang-icons/icon128px.png" width="22px" /> English | [简体中文](./README.zh-CN.md) | [日本語](./README.ja-JP.md)
 
 ![graphic-walker-banner](https://docs-us.oss-us-west-1.aliyuncs.com/images/graphic-walker/20230811/gw-banner.png)
