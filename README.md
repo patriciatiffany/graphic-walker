@@ -7,6 +7,7 @@ npm run build:app
 ```
 and the resulting app can be found in `/app-dist`.
 
+---------
 
 
 <img src="https://ch-resources.oss-cn-shanghai.aliyuncs.com/images/lang-icons/icon128px.png" width="22px" /> English | [简体中文](./README.zh-CN.md) | [日本語](./README.ja-JP.md)
